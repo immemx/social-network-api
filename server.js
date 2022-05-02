@@ -10,7 +10,7 @@ app.use(require('./routes'));
 const PORT = process.env.PORT || 3001;
 
 mongoose.set('debug', true);
-mongoose.connect(process.env.MONGODB_URL || 'mongodb://localhost:3001/Social-Network-Api',
+mongoose.connect(process.env.MONGODB_URL || 'mongodb://localhost/Social-Network-Api',
 {
     useNewUrlParser: true,
     useUnifiedTopology: true

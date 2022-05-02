@@ -4,7 +4,7 @@ const ThoughtController = {
 
     // add Thought to User
     createThought({ params, body }, res) {
-        const thought = new thought(body)
+        const thought = new Thought(body)
         thought.user = params.userId
         Thought.create(thought)
         .then(dbThoughtData => {
