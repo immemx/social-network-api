@@ -9,7 +9,6 @@ app.use(require('./routes'));
 
 const PORT = process.env.PORT || 3001;
 
-const mongoose = require('mongoose');
 mongoose.set('debug', true);
 mongoose.connect(process.env.MONGODB_URL || 'mongodb://localhost:3001/Social-Network-Api',
 {
